@@ -1,2 +1,5 @@
 # local setting
 *.local
+
+# local state
+*state*
