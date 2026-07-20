@@ -18,4 +18,9 @@
     Source = "powershell\profile.ps1"
     Target = "{PROFILE}"
   }
+
+  yazi = @{
+    Source = "yazi"
+    Target = "{APPDATA}\yazi\config"
+  }
 }
