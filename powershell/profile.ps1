@@ -2,7 +2,7 @@
 Set-Alias -Name open -Value Invoke-Item 
 
 # ---- Init Posh Theme ----
-oh-my-posh init pwsh --config "${env:POSH_THEMES_PATH}\powerlevel10k_rainbow.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "${env:POSH_THEMES_PATH}\catppuccin_mocha.omp.json" | Invoke-Expression
 
 # ---- Better Dir List ----
 Import-Module -Name Terminal-Icons
