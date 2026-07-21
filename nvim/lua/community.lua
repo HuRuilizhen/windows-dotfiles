@@ -12,4 +12,8 @@ return {
   -- theme and color
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.color.twilight-nvim" },
+
+  -- status line
+  { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
+  { import = "astrocommunity.recipes.heirline-clock-statusline" },
 }
