@@ -1,0 +1,13 @@
+{
+	"table of content section": {
+		"prefix": ["tocs"],
+		"body": [
+			"## Table of Content",
+			"",
+			"<!--toc:start-->",
+			"",
+			"<!--toc:end-->"
+		],
+		"description": "add table of content comment section"
+	}
+}
