@@ -1,6 +1,10 @@
 # ---- Init Custom Alias ----
 Set-Alias -Name open -Value Invoke-Item 
 
+# ---- Set Default Editor ----
+$env:EDITOR = "nvim"
+$env:VISUAL = "nvim"
+
 # ---- Init Posh Theme ----
 oh-my-posh init pwsh --config "${env:POSH_THEMES_PATH}\catppuccin_mocha.omp.json" | Invoke-Expression
 
