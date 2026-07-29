@@ -7,3 +7,8 @@ group = "git"
 url   = "*/"
 run   = "git"
 group = "git"
+
+[opener]
+edit = [
+  { run = 'nvim %*', block = true, desc = "Neovim" },
+]
