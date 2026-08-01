@@ -9,6 +9,9 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
 
+  -- editing support
+  { import = "astrocommunity.editing-support.conform-nvim" },
+
   -- theme and color
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.color.twilight-nvim" },
