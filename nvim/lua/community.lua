@@ -21,6 +21,10 @@ return {
   { import = "astrocommunity.recipes.heirline-clock-statusline" },
 
   -- better edit
+  { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.markdown-and-latex.peek-nvim" },
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
+
+  -- lang pack
+  { import = "astrocommunity.pack.ps1" },
 }
