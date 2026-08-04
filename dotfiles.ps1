@@ -14,18 +14,22 @@ $tokens = @{
   "{PROFILE}"      = $PROFILE
 }
 
-foreach ($name in $manifest.Keys) {
+foreach ($name in $manifest.Keys)
+{
   $config = $manifest[$name]
 
   $source = Join-Path $PSScriptRoot $config.Source
   $target = $config.Target
 
-  foreach ($token in $tokens.Keys) {
+  foreach ($token in $tokens.Keys)
+  {
     $target = $target.Replace($token, [string]$tokens[$token])
   }
 
-  if ($Unlink) {
-    if (-not (Test-Path -LiteralPath $target)) {
+  if ($Unlink)
+  {
+    if (-not (Test-Path -LiteralPath $target))
+    {
       Write-Host "Skipped ${name}: target does not exist."
       continue
     }
@@ -33,16 +37,17 @@ foreach ($name in $manifest.Keys) {
     $item = Get-Item -LiteralPath $target -Force
     $isSymbolicLink = $item.LinkType -eq "SymbolicLink"
 
-    if ($isSymbolicLink) {
+    if ($isSymbolicLink)
+    {
       Remove-Item -LiteralPath $target -Force
       Write-Host "Unlinked $name"
-    }
-    elseif ($Force) {
+    } elseif ($Force)
+    {
       Write-Warning "Force removing existing target for $name`: $target"
       Remove-Item -LiteralPath $target -Recurse -Force
       Write-Host "Removed $name"
-    }
-    else {
+    } else
+    {
       Write-Warning (
         "$name is not a symbolic link. " +
         "Use -Unlink -Force to remove the existing target: $target"
@@ -52,8 +57,10 @@ foreach ($name in $manifest.Keys) {
     continue
   }
 
-  if (Test-Path -LiteralPath $target) {
-    if (-not $Force) {
+  if (Test-Path -LiteralPath $target)
+  {
+    if (-not $Force)
+    {
       Write-Warning (
         "$name already exists. " +
         "Use -Force to replace the existing target: $target"
@@ -68,7 +75,8 @@ foreach ($name in $manifest.Keys) {
 
   $parent = Split-Path -Parent $target
 
-  if ($parent -and -not (Test-Path -LiteralPath $parent)) {
+  if ($parent -and -not (Test-Path -LiteralPath $parent))
+  {
     New-Item `
       -ItemType Directory `
       -Path $parent `
