@@ -4,9 +4,8 @@
 
 [core]
 	editor = nvim
-
-[core]
 	pager = delta
+	whitespace = trailing-space,space-before-tab
 
 [interactive]
 	diffFilter = delta --color-only
