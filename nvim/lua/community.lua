@@ -25,6 +25,9 @@ return {
   { import = "astrocommunity.markdown-and-latex.peek-nvim" },
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
 
+  -- edit recording
+  { import = "astrocommunity.media.vim-wakatime" },
+
   -- lang pack
   { import = "astrocommunity.pack.ps1" },
 }
