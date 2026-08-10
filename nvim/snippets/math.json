@@ -18,5 +18,12 @@
 			"$$"
 		],
 		"description": "single line formula environment"
+	},
+	"fraction": {
+	  "prefix": ["/"],
+	  "body": [
+	    "\\frac{$1}{$2}"
+	  ],
+	  "description": "fraction operation"
 	}
 }
