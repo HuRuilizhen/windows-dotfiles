@@ -1,0 +1,22 @@
+{
+	"formula environment: multi-line aligned": {
+		"prefix": ["fmla"],
+		"body": [
+			"$$",
+			"\t\\begin{align*}",
+			"\t\t$1",
+			"\t\\end{align*}",
+			"$$"
+		],
+		"description": "multiline aligned formula environment"
+	},
+	"formula environment: single-line": {
+		"prefix": ["fmls"],
+		"body": [
+			"$$",
+			"\t$1",
+			"$$"
+		],
+		"description": "single line formula environment"
+	}
+}
