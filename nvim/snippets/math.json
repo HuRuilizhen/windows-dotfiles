@@ -19,11 +19,32 @@
 		],
 		"description": "single line formula environment"
 	},
-	"fraction": {
+	"opertaion: fraction": {
 	  "prefix": ["/"],
 	  "body": [
 	    "\\frac{$1}{$2}"
 	  ],
 	  "description": "fraction operation"
+	},
+	"symbol: set of natural numbers": {
+		"prefix": ["N"],
+		"body": [
+			"\\mathbb{N}"
+		],
+		"description": "set of natural numbers"
+	},
+	"symbol: set of prime numbers": {
+		"prefix": ["P"],
+		"body": [
+			"\\mathbb{P}"
+		],
+		"description": "set of prime numbers"
+	},
+	"symbol: set of integers": {
+		"prefix": ["Z"],
+		"body": [
+			"\\mathbb{Z}"
+		],
+		"description": "set of integers"
 	}
 }
