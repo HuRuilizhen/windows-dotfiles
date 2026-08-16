@@ -12,6 +12,10 @@
       {
         "language": "markdown",
         "path": "./math.json"
+      },
+      {
+        "language": "scheme",
+        "path": "./scheme.json"
       }
     ]
   }

@@ -1,0 +1,43 @@
+{
+	"expression: condition - normal form": {
+		"prefix": ["condn"],
+		"body": [
+			"(cond",
+			"\t((${1:predication}) ${2:branch})",
+			"\t((${3:predication}) ${4:branch}))"
+		],
+		"description": "scheme condition normal form expression"
+	},
+	"expression: condition - else form": {
+		"prefix": ["conde"],
+		"body": [
+			"(cond",
+			"\t((${1:predication}) ${2:branch})",
+			"\t(else ${3:default-branch}))"
+		],
+		"description": "scheme condition else form expression"
+	},
+	"function environment: single line": {
+		"prefix": ["defs"],
+		"body": [
+			"(define (${1:function-name} ${2:parameters}) ${3:function-body})"
+		],
+		"description": "scheme single-line function environment"
+	},
+	"function environment: multi-line": {
+		"prefix": ["defm"],
+		"body": [
+			"(define (${1:function-name} ${2:parameters})",
+			"\t${3:function-body})"
+		],
+		"description": "scheme multi-line function environment"
+	},
+	"function definition: square": {
+		"prefix": ["square"],
+		"body": [
+			"(define (square x) (* x x))"
+		],
+		"description": "scheme square function definition"
+	}
+}
+
