@@ -6,3 +6,6 @@
 
 # lock file
 *lock*
+
+# white list
+!lazy-lock.json
