@@ -22,6 +22,9 @@ return {
           bundle_path = vim.fn.stdpath "data" .. "/mason/packages/powershell-editor-services",
         },
       },
+      formatting = {
+        filter = function(bufnr) return not require("utils.noformat").is_disabled(bufnr) end,
+      },
     },
   },
 }
