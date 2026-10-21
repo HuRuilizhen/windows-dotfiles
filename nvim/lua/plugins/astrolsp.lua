@@ -11,6 +11,13 @@ return {
     "AstroNvim/astrolsp",
     opts = {
       config = {
+        -- neocmakelsp >= 0.11 replaced `--stdio` with the `stdio` subcommand
+        neocmake = {
+          cmd = { "neocmakelsp", "stdio" },
+          handlers = {
+            ["textDocument/publishDiagnostics"] = function() end,
+          },
+        },
         powershell_es = {
           bundle_path = vim.fn.stdpath "data" .. "/mason/packages/powershell-editor-services",
         },

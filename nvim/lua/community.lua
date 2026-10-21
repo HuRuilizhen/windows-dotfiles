@@ -32,4 +32,5 @@ return {
   -- lang pack
   { import = "astrocommunity.pack.ps1" },
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.cmake" },
 }
