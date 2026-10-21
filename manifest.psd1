@@ -23,4 +23,9 @@
     Source = "yazi"
     Target = "{APPDATA}\yazi\config"
   }
+
+  vscode = @{
+    Source = ".\vscode\settings.json"
+    Target = "{APPDATA}\Code\User\settings.json"
+  }
 }
